@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
 mongoose.connect('mongodb://localhost/contactCode', { useNewUrlParser: true, useUnifiedTopology: true });
 
-const port = process.env.PORT || 8000;
+let port = process.env.PORT || 8000;
 
 //define mongoose schema
 const contactSchema = new mongoose.Schema({

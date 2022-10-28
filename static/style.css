@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#logo{
+    display: flex;
+    color:white;
+    align-items: center;
+    margin:0px 14px;
+    font-size: 25px;
+    margin-right: 40px;
+}
+#logo img{
+    height: 40px;
+    filter:invert(1);
+}
+#navbar{
+    padding:10px 10px;
+    background-color:red;
+   font-family: 'Merriweather';
+   color: white;
+   
+}
+#navbar ul{
+    display: flex;
+   align-items: center;
+    flex-direction: row;
+   /* justify-content: center; */
+
+}
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding:13px 20px;
+    font-size: 20px;
+   
+}
+#navbar li a:hover{
+    color: black;  
+}
+#introSection {
+     color:rgba(251, 10, 10, 0.918); 
+   
+}
+#introSection div.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:center/cover no-repeat url("/img/code1.jpg");
+  justify-content: center;
+  font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 65px;
+    height: 400px;
+    opacity: 0.9;
+}
+#introSection div.small{
+    font-size: 32px;
+    padding: 5px;
+    font-weight: bold;
+}
+#missionSection{
+    width:87%;
+    height:320px;
+    margin:auto;
+   
+}
+#missionSection h3{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 13px;
+
+}
+.card{
+    display: inline-block;
+    border:2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin:19px 23px;
+    height: 209px;
+    justify-content: center;
+   
+}
+.card h4{
+    text-align: center;
+    margin:0 12px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-box{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+}
+.card-img{
+    height: 130px;
+    padding:0 14px;
+  
+}
+.card-img img{
+    height: inherit;
+    margin:0px 40px;
+}
+.card-content{
+    padding: 0 24px;
+}
+.card-content p{
+    font-size: 15px;
+}
+#sponsorSection{
+background-color:rgb(241, 164, 150);
+height:300px;
+
+}
+#sponsorSection h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding-top: 23px;
+
+}
+#sponsors{
+    height:190px;
+    max-width: 1000px;
+    margin:auto;
+}
+.spimage{
+    height:80%;
+    margin:19px;
+    
+}
+ #footer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+background-color: black;
+font-size: 34px;
+ height:50px;  
+}

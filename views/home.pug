@@ -1,0 +1,55 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+
+block style     
+    style 
+        include ../static/style.css  
+
+
+block content
+    
+    section#introSection  
+        div.pic  Welcome to Brilliant Coding Academy
+            div.small Eat Sleep CODE Repeat
+
+    section#missionSection 
+        h3 Our Missions   
+        div.card
+            h4 WEB DEVELOPMENT
+            div.card-box
+                div.card-img
+                    img(src="/img/code2.jpg")
+            div.card-content
+                p This is best code academy of universe learn and enjoy
+
+
+        div.card        
+            h4 ANDROID DEVELOPMENT
+            div.card-box
+                div.card-img
+                    img(src="/img/code3.jpg")
+            div.card-content
+                p This is best code academy of universe learn and enjoy
+        
+
+        div.card
+            h4 AI AND ML
+            div.card-box
+                div.card-img
+                    img(src="/img/code4.jpg")
+            div.card-content
+                p This is best code academy of universe learn and enjoy
+                
+    section#sponsorSection  
+        h2 Our Sponsors 
+        div#sponsors 
+            img(src="/img/hp.jpg",alt="this is sponsor",class="spimage")
+            img(src="/img/ms.jpg",alt="this is sponsor",class="spimage")
+            img(src="/img/jio.jpg",alt="this is sponsor",class="spimage")
+            img(src="/img/samsung.jpg",alt="this is sponsor",class="spimage")           
+
+    
+    

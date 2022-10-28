@@ -29,12 +29,12 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
 // ENDPOINTS
 app.get('/', (req, res)=>{
-    const params = {}
-    res.status(200).render('home.pug', params);
+    // const params = {}
+    res.status(200).render('home.pug');
 })
  app.get('/contact', (req, res)=>{
-     const params = {}
-     res.status(200).render('contact.pug', params);
+    //  const params = {}
+     res.status(200).render('contact.pug');
  })
 
  app.post('/contact', (req, res)=>{

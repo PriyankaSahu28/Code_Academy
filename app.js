@@ -49,7 +49,8 @@ app.get('/', (req, res)=>{
 })
 
 // START THE SERVER
-app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
-});
+app.listen(process.env.PORT || 8000, function() {
+    console.log('Server listening on port 8000');
+    
+    });
  

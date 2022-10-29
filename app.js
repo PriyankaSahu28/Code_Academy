@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
-mongoose.connect('mongodb://localhost:27017/contactCode', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://priyanka28:priyankarp0228@cluster0.aoocbeq.mongodb.net/test', { useNewUrlParser: true, useUnifiedTopology: true });
 
 let port = process.env.PORT || 8000;
 

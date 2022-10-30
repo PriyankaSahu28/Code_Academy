@@ -1,11 +1,12 @@
 const dotenv = require("dotenv");
+dotenv.config();
 const express = require("express");
 const path = require("path");
 const app = express();
 var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
 
-dotenv.config({path:'.\config.env'})
+// dotenv.config({path:'config.env'})
 const DB=process.env.DATABASE
 mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true });
 

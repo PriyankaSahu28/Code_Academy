@@ -7,8 +7,8 @@ const app = express();
 
 dotenv.config({path:'./config.env'})
 
-// const DB=process.env.DATABASE;
-mongoose.connect('mongodb+srv://priyanka28:priyankarp0228@cluster0.aoocbeq.mongodb.net/test', {
+ const DB=process.env.DATABASE;
+mongoose.connect(DB, {
     usenewurlparser: true,
     //  useCreateIndex:true
       useunifiedtopology: true

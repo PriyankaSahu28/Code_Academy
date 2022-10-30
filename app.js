@@ -11,8 +11,8 @@ const DB=process.env.DATABASE;
 mongoose.connect(DB, {
     usenewurlparser: true,
     useCreateIndex:true,
-    useunifiedtopology: true,
-    useFindAndModify:false
+    // useunifiedtopology: true,
+    // useFindAndModify:false
   })
   .then(() => {
     console.log("Successfully connected ");

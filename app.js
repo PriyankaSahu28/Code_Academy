@@ -8,7 +8,7 @@ const bodyparser=require("body-parser");
 
  
 const DB=process.env.DATABASE
-mongoose.connect(config.DB, {
+mongoose.connect(DB, {
     usenewurlparser: true,
     useunifiedtopology: true,
   })

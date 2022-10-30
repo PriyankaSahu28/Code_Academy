@@ -6,7 +6,8 @@ var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
 
 dotenv.config({path:'./config.env'})
-mongoose.connect('process.env.DATABASE', { useNewUrlParser: true, useUnifiedTopology: true });
+const db=process.env.DATABASE
+mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let port = process.env.PORT || 8000;
 

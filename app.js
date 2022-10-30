@@ -5,8 +5,6 @@ const path = require("path");
 const app = express();
 var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
-
- 
 const DB=process.env.DATABASE
 mongoose.connect(DB, {
     usenewurlparser: true,

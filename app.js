@@ -1,14 +1,24 @@
 const dotenv = require("dotenv");
-dotenv.config();
+dotenv.config({path:"./config.env"})
 const express = require("express");
 const path = require("path");
 const app = express();
 var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
 
-// dotenv.config({path:'config.env'})
+ 
 const DB=process.env.DATABASE
-mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose
+  .connect(DB, {
+    usenewurlparser: true,
+    useunifiedtopology: true,
+  })
+  .then(() => {
+    console.log("Successfully connected ");
+  })
+  .catch((error) => {
+    console.log(`can not connect to database, ${error}`);
+  });
 
 let port = process.env.PORT || 8000;
 

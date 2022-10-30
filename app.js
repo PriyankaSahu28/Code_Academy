@@ -5,20 +5,20 @@ var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
 const app = express();
 
-dotenv.config({path:"./config.env"})
+dotenv.config({path:'./config.env'})
 
 const DB=process.env.DATABASE;
 mongoose.connect(DB, {
     usenewurlparser: true,
-    useCreateIndex:true,
-    // useunifiedtopology: true,
+    //  useCreateIndex:true
+      useunifiedtopology: true
     // useFindAndModify:false
   })
   .then(() => {
     console.log("Successfully connected ");
   })
   .catch((err) => {
-    console.log(`can not connect to database, ${error}`);
+    console.log(`can not connect to database, ${err}`);
   });
 
 let port = process.env.PORT || 8000;

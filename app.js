@@ -1,9 +1,11 @@
+const dotenv = require("dotenv");
 const express = require("express");
 const path = require("path");
 const app = express();
 var mongoose = require('mongoose');
 const bodyparser=require("body-parser");
-mongoose.connect('mongodb+srv://priyanka28:priyankarp0228@cluster0.aoocbeq.mongodb.net/test_contacts', { useNewUrlParser: true, useUnifiedTopology: true });
+dotenv.config({path:'config.env'})
+mongoose.connect('process.env.DATABASE', { useNewUrlParser: true, useUnifiedTopology: true });
 
 let port = process.env.PORT || 8000;
 
